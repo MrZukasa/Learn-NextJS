@@ -34,5 +34,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-## Creation of the Next.Js app
-Type `npx create-next-app tutorial`
+## Creazione di un app Next.Js
+Si crea con `npx create-next-app tutorial`
+
+Appena si crea un file.js o .ts dentro la cartella pages, Next la aggiunge alle route disponibili!!
+
+per creare un componebnte react si usa sfc che sta per `state functional component`
+L'aggiunta di pagine e di componenti è disarmante, facilissima basta letteralmente scrivere dentro!!
+Non si fa più nulla in HTML, addirittura i link sono dei compomenti ReactJS e si usano importando `import Link from "next/link";` e poi mettendo <Link><Link/>
+Per avere la navbar e il footer in tutte le pagine, basta fare un componente chiamato Layout e dire a questo componente di renderizzare tra i tag navbar e footer un children che sarà la pagina che richiamiamo ogni volta.
+
+La pagina che richiamiamo ogni volta si trova dentro [_app.js](pages/_app.js) ed è il tag `<Component {...pageProps} />`, quindi basta racchiuderlo dentro il tag <Layout></Layout> cosi facendo praticamente si mette un componente nell'altro.
+> N.B. [Tutorial](https://www.youtube.com/watch?v=DGn25s42NvQ&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw&index=5)
