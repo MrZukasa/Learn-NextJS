@@ -68,3 +68,15 @@ Cosi facendo metto tutte le proprietà di `container` a questo `div`
 Per creare una pagina 404 personalizzata si crea un file `404.js` nella folder `pages`
 
 ## Redirecting Users
+
+Si parla degli useEffect hook praticamente nel quale useremo un useRouter.
+
+>Devo ricordarmi del dipendency array messo con le [] che serve ad avviare lo useeffect solo durante il mount
+
+## Fetchare Dati
+
+Per questo esempio userò jsonplaceholder
+
+## Dynamic Router
+
+Per avere un router dinamico metto il nome della pagina tra [] quindi `[id].js` cosi facendo Next sa che questa pagina è dinamica!!
